@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+<div class="jumbotron text-center">
+    <h3>Welcome to Software Blog</h3>
+    <p>You can publish your entries in this blog and help other developers</p>
+</div>
+<p>
+        {% if request.user.is_authenticated %}
+            {{request.user.username}} logged in
+
+        {% else %}
+            
+        {% endif %}
+
+</p>
+
+{% endblock body %}<h3>AnaSayfa
